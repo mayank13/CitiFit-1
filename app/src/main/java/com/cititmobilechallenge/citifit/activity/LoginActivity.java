@@ -6,6 +6,9 @@ import android.os.Bundle;
 import com.cititmobilechallenge.citifit.R;
 import com.cititmobilechallenge.citifit.common.FontHelper;
 
+/**
+ * Created by Ashwini Kumar
+ */
 public class LoginActivity extends Activity {
 
     @Override
