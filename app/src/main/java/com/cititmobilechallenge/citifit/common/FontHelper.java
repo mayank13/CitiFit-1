@@ -19,9 +19,9 @@ import android.widget.TextView;
 public class FontHelper {
 
     private static final String TAG = FontHelper.class.getSimpleName();
-    public static final String FONT_PROXIMANOVA_LIGHT = "fonts/ProximaNova_Light.ttf";
-    public static final String FONT_PROXIMANOVA_REGULAR = "fonts/ProximaNova_Regular.ttf";
-    public static final String FONT_PROXIMANOVA_BOLD = "fonts/ProximaNova_Semibold.ttf";
+    public static final String FONT_PROXIMANOVA_LIGHT = "ProximaNova_Light.ttf";
+    public static final String FONT_PROXIMANOVA_REGULAR = "ProximaNova_Regular.ttf";
+    public static final String FONT_PROXIMANOVA_BOLD = "ProximaNova_Semibold.ttf";
     public static final String TAG_TITLE = "title";
     public static final String TAG_SUBTITLE = "subtitle";
     public static final String TAG_CONTENT = "content";
@@ -48,9 +48,7 @@ public class FontHelper {
 
                     fontPath = getFontTypeByTag(root.getTag().toString());
                 }
-
-                AssetManager mgr = context.getAssets();
-                        ((TextView) root).setTypeface(Typeface.createFromAsset(context.getAssets(), fontPath));
+                ((TextView) root).setTypeface(Typeface.createFromAsset(context.getAssets(), fontPath));
             } else if (root instanceof Button) {
 
                 ((Button) root).setTypeface(Typeface.createFromAsset(context.getAssets(), fontPath));
