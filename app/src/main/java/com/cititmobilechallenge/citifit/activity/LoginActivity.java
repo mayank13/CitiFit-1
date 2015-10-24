@@ -1,0 +1,19 @@
+package com.cititmobilechallenge.citifit.activity;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+import com.cititmobilechallenge.citifit.R;
+import com.cititmobilechallenge.citifit.common.FontHelper;
+
+public class LoginActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+
+        FontHelper.applyFont(this, findViewById(R.id.rl_login_container));
+    }
+
+}
